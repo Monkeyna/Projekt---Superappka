@@ -1,0 +1,191 @@
+/* nejsme včerejší, používáme moderní box model */
+*, :after, :before { box-sizing: border-box; }
+
+/*
+	BARVY
+	šedé pozadí      #e5e5e5
+	světle fialová   #48418e
+	tmavě fialová    #25133d
+
+	POUŽITÉ PÍSMO
+	Source Sans Pro - řezy písma light 300, regular 400 a bold 700
+	https://fonts.google.com/specimen/Roboto
+*/
+
+
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #e5e5e5;
+
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.obal {
+
+	width: 960px;
+
+	margin: 0 auto;
+
+	background: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ----- menu ----- */
+.menu {
+	
+	margin: 0;
+	padding: 0;
+
+	
+	display: flex;
+	list-style: none;
+
+	background-color: white;
+}
+
+.menu li {
+
+	margin: 0;
+	padding: 0;
+}
+
+.menu a {
+	
+	display: block;
+	padding: 1em 2em;
+	color: #25133d;
+	text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+	
+	background-color: #48418e;
+	color: white;
+}
+
+.menu .logo {
+	
+	padding: 1em 2em;
+	font-weight: 700;
+	color: #25133d;
+}
+
+/* ----- banner ----- */
+.banner {
+	
+	position: relative;
+	min-height: 450px;
+	padding: 60px 40px;
+
+	color: white;
+	background: #2c3e50 url('images/pozadi.jpg') center center no-repeat;
+
+	background-size: cover;
+}
+
+.titulek {
+	
+	margin: 0;
+
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 1;
+	color: white;
+}
+
+.podtitulek {
+
+	margin: 50px 0;
+
+	font-size: 36px;
+	font-weight: 300;
+
+	line-height: 1.2;
+}
+
+.tlacitko {
+	
+	display: inline-block;
+	padding: 1em 1.5em;
+
+	font-size: 20px;
+	line-height: 1;
+	color: white;
+	text-decoration: none;
+
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+.tlacitko-stahnout {
+
+	margin-right: 20px;
+	background-color: #48418e;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tlacitko-info {
+
+	font-weight: 300;
+}
+
+.telefon {
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* ----- obsah ----- */
+
+.obsah {
+
+	padding: 40px;
+}
+
+.vlastnosti {
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+.sloupec {
+	
+	flex: 0 0 30%;
+
+	text-align: center;
+}
+
+h2 {
+	
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: #48418e;
+}
+
+.ikona {
+	
+	width: 70px;
+	height: auto;
+}
+
+/* ----- patička ----- */
+
+.paticka {
+	padding: 10px 40px;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: #48418e;
+	color: white;
+	text-align: center;
+}
